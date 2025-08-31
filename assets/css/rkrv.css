@@ -1,0 +1,765 @@
+@charset "UTF-8";
+
+/* line no. 3 to 8 are managed the about section css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* This is used for remove the whole side margin in web page */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { 
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* It handle's the margin between words and format */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* It also handle's the margin in about section  */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Ts define's top margin of webpage */
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* this is used for remove underline from social media logo */
+a {
+  color: #F85C70;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* It is used for text based size and margin */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* It is used for font size in second page */
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+/* It is used for font size in third page */
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+/* My Expertise section */
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+} 
+mark,
+.mark {
+  padding: 0.2em;
+  background-color: #fcf8e3;
+} 
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+} 
+ 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ /*This is resume section  */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+} 
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}  
+/* This column is used in My Expertise section */
+ .col-1 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 8.33333%;
+      -ms-flex: 0 0 8.33333%;
+          flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+} 
+.col-10 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 83.33333%;
+      -ms-flex: 0 0 83.33333%;
+          flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+/* this is used for division of home section(about me, personal info, my expertise) */
+@media (min-width: 768px) {
+  .col-md {
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-lg-8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.66667%;
+        -ms-flex: 0 0 66.66667%;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+/* This is used for last page section i.e., send a message section */
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* It is used for maintain the between name, email and description */
+select.form-control[size], select.form-control[multiple] {
+  height: auto;
+}
+/* Text area field message box */
+textarea.form-control {
+  height: auto;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* It is used for managed hire me icon with red colour  */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* It is used design print resume icon */
+.btn-primary {
+  color: #fff;
+  background-color: #F85C70;
+  border-color: #F85C70;
+}
+
+/* this is used for the pic relocation */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.tab-content > .active {
+  display: block;
+}
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8rem 1rem;
+} 
+/* It is used for horizontal view of home,about,& resume section */
+.navbar-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-collapse {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  /* Itis used for the slide of name and profile */
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*  It is used for column wise expertise,education and skills  */
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+}
+
+/* It provide margin */
+.card-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* It is used for the progress bar in skill section */
+.progress {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.3rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #eaf0fc;
+  border-radius: 0.25rem;
+}
+
+/* It is used for the hire me background red in colour */
+.bg-primary {
+  background-color: #F85C70 !important;
+}
+
+/* It is used for graph preview show */
+.bg-danger {
+  background-color: #F85C70 !important;
+}
+
+/* it is used for dark background for i am available for freelancer  */
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+/* It is used for home about resume header */
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* it is used for arrangement of contact details/ get in touch */
+.d-inline {
+  display: inline !important;
+}
+
+/* it is used for the home ,about and resume section to hold */
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+/* it is used for footer margin  */
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
+/* it is used for to maintain margin of my resume section */
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+/* it is used margin in get to touch */
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+/* it maintain the margin of my expertise section */
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+/*it is used for maintain margin of who I am */
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* it is used for maintain the margin of home section */
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* it is used for the maintain margin of logo's social media */
+.pt-1,
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+
+/* it is used  for the maintain size of print resume section */
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+/* it is used for maintain language section */
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+/* it is used for maintain the margin of social media in first page */
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+
+/* it is used for maintain margin of footer */
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* it is used for maintain top padding of last social media icon */
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+/* it is used for the maintain padding of I am available for freelancer background section */
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+.pr-5,
+.px-5 {
+  padding-right: 3rem !important;
+}
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+.pl-5,
+.px-5 {
+  padding-left: 3rem !important;
+}
+
+/* it is used for managed the icon */
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+/* it is used for the text in center of I am available for freelance */
+.text-center {
+  text-align: center !important;
+}
+
+/* it is used for fill the colour in my expertise icon */
+.text-danger {
+  color: #F85C70 !important;
+}
+
+/* it is used for fill the colour in first page icon and 
+I am available for freelancer section */
+.text-light {
+  color: #f8f9fa !important;
+}
+
+/* it is used for dark in colour for get in touch section icon */
+.text-dark {
+  color: #343a40 !important;
+}
+
+/* typography */
+/* it is used for managed the text in home section (Who I am) */
+p {
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1300 - 300)));
+  opacity: .8;
+  color: #444;
+}
+
+/* it is used for managed the title of my resume section */
+.title {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+}
+
+/* get in touch icon size */
+.icon-md {
+  font-size: 22px;
+}
+
+/* managed the icon size in my expertise */
+.icon-lg {
+  font-size: 30px;
+}
+
+/* it is used for fill the colour in MY resume(personal information) */
+.info {
+  color: #6c757d;
+  font-size: 14px;
+}
+.info li {
+  padding-bottom: 8px;
+}
+.info span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #343a40;
+}
+
+/* it is used for line margin in Who I am section */
+.line {
+  display: block;
+  width: 25px;
+  height: 1.5px;
+  background-color: #F85C70;
+}
+
+/* it is used for design the button size in print resume section */
+.btn-rounded {
+  border-radius: 100px;
+}
+
+/* size of button in hire me icon */
+.w-lg {
+  min-width: 150px;
+}
+
+/* card is used for my resume */
+.card {
+  margin-bottom: 30px;
+}
+.card .card-header {
+  background: transparent;
+  border: none;
+}
+.card .card-body {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* it is used for social media icon */
+.social-icons {
+  list-style-type: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 180px;
+}
+.social-icons .social-link {
+  font-size: 18px;
+}
+
+/* it is used for header section home,about,resume,contact */
+.navbar {
+  box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
+  -webkit-box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
+}
+.navbar .navbar-nav:first-child .nav-item:first-child .nav-link {
+  padding-left: 0;
+}
+.navbar .nav-link {
+  font-weight: bold;
+  font-family: "Dosis","Open Sans",sans-serif;
+}
+.navbar .nav-link.active {
+  color: #F85C70 !important;
+}
+.navbar .brand {
+  text-align: center;
+}
+.navbar .brand .brand-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -weblit-transform: translate(-50%, -50%);
+  border: 10px solid white;
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+  -weblit-transition: .5s !important;
+  z-index: 2;
+  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+  width: 170px;
+  border-radius: 50%;
+}
+.navbar .brand .brand-txt .brand-subtitle {
+  font-size: 13px;
+  color: #888;
+}
+
+/* It is used for image navigation */
+.navbar.affix .brand-img {
+  top: -10px;
+  opacity: 0;
+}
+
+/* it is used for footer side */
+.footer {
+  background: #17263C;
+}
+
+/* it is header section */
+.header {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+.header .container {
+  position: relative;
+  height: 100%;
+}
+.header .header-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+}
+.header .header-content .header-subtitle {
+  font-weight: 200;
+  font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+.header .header-content .header-title {
+  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
+  line-height: .7;
+  margin-bottom: 25px;
+  color: inherit;
+}
+.header .header-content .header-mono {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 40px;
+}
+.section {
+  padding: 80px 0;
+}
+
+/* it is used for about header section */
+.about-section {
+  border-bottom: 1px solid #dee2e6;
+}
+.about-section .about-card {
+  padding: 60px;
+  border-right: 1px solid #dee2e6;
+}
+
+/* it is used for get in touch or contact details */
+.contact {
+  position: relative;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+/* it is used managed the size of message box and contact details */
+.contact .contact-form-card,
+.contact .contact-info-card {
+  padding: 35px;
+  background: #fff;
+  min-height: 500px;
+}
+.contact .contact-title {
+  margin-bottom: 30px;
+}
+.contact .contact-title::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #F85C70;
+  display: block;
+  margin-top: 10px;
+}
